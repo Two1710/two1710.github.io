@@ -36,7 +36,7 @@
     setTimeout(()=>t.classList.remove('show'), 2000);
   }
 
-  function xmlError(doc){return doc.querySelector('parsererror')}
+  function xmlError(doc){ return doc.querySelector('parsererror'); }
   
   function fromXML(el){
     const t=el.tagName.toLowerCase();
@@ -170,7 +170,7 @@
     return obj(top);
   }
 
-  const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;');
+  const esc=s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;');
   
   function toXML(n,depth=2){
     const pad='  '.repeat(depth);
@@ -184,7 +184,7 @@
     return '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0">\n'+toXML(root)+'\n</plist>\n';
   }
 
-  // --- SERIALIZE BINARY PLIST ---
+  // --- SERIALIZE BINARY PLIST (FIXED FOR VS CODE & APPLE OS) ---
   function serializeBinary(){
     const objects=[];
     function add(n){
@@ -287,9 +287,10 @@
   const label=t=>({dict:'Dictionary',array:'Array',string:'String',integer:'Integer',real:'Real',boolean:'Boolean',date:'Date',data:'Data'}[t]||t);
   
   function counts(n,c={total:0,dict:0,array:0}){
+    if(!n) return c;
     c.total++;
-    if(n.type==='dict'){ c.dict++; n.entries.forEach(x=>counts(x.value,c)); }
-    if(n.type==='array'){ c.array++; n.items.forEach(x=>counts(x,c)); }
+    if(n.type==='dict'){ c.dict++; (n.entries||[]).forEach(x=>counts(x.value,c)); }
+    if(n.type==='array'){ c.array++; (n.items||[]).forEach(x=>counts(x,c)); }
     return c;
   }
 
@@ -307,6 +308,7 @@
     const matches=[];
     function has(s){ re.lastIndex=0; return re.test(String(s??'')); }
     function walk(n){
+      if(!n) return;
       if(n.type==='dict'){
         for(const e of n.entries){
           if(has(e.key)) matches.push({target:e, field:'key'});
