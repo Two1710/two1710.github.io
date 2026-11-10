@@ -184,7 +184,7 @@
     return '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0">\n'+toXML(root)+'\n</plist>\n';
   }
 
-  // --- SERIALIZE BINARY PLIST (FIXED FOR VS CODE & APPLE OS) ---
+  // --- SERIALIZE BINARY PLIST ---
   function serializeBinary(){
     const objects=[];
     function add(n){
@@ -604,9 +604,10 @@
     downloadBlob(binaryMode?serializeBinary():serialize(), binaryMode?'application/octet-stream':'application/xml;charset=utf-8', filename);
   };
   
+  // Tải XML với tên file giữ nguyên đuôi .plist
   $('saveXMLButton').onclick=()=>{
     if(!root) return;
-    downloadBlob(serialize(), 'application/xml;charset=utf-8', filename.replace(/\.plist$/i,'')+'.xml.plist');
+    downloadBlob(serialize(), 'application/xml;charset=utf-8', filename.endsWith('.plist')?filename:filename+'.plist');
   };
 
   $('findNext').onclick=()=>moveSearch(1);
