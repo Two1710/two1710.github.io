@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f6f7fb">
   <title>Plist Studio — Chỉnh sửa plist</title>
   <style>
-    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#202434;background:#f6f7fb;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-height:100vh}.shell{max-width:1150px;margin:auto;padding:32px 24px 64px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:44px}.brand{display:flex;gap:11px;align-items:center;font-weight:750;font-size:16px}.brand-icon{width:36px;height:36px;background:#6658e8;color:white;border-radius:11px;display:grid;place-items:center}.privacy{font-size:12px;color:#777d8e}.privacy i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#39b77b;margin-right:7px}.intro{max-width:700px;margin:0 auto 28px;text-align:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.35px;color:#6d5be8;font-weight:750}.intro h1{font-size:clamp(30px,5vw,44px);letter-spacing:-1.7px;margin:12px 0}.intro p{color:#74798a;font-size:15px}.workspace{background:#fff;border:1px solid #e9eaf0;border-radius:16px;box-shadow:0 12px 36px #29264d0b;overflow:hidden}.toolbar{height:60px;border-bottom:1px solid #ececf2;display:flex;align-items:center;justify-content:space-between;padding:0 20px}.file-info{display:flex;align-items:center;gap:10px}.file-icon{width:33px;height:33px;border-radius:9px;background:#f0efff;color:#685ae4;display:grid;place-items:center}.file-name{font-size:13px;font-weight:650}.file-meta{font-size:11px;color:#969aaa;margin-top:2px}.actions{display:flex;gap:8px}.button{border:1px solid #e4e5ec;background:#fff;border-radius:8px;padding:9px 12px;font:600 12px inherit;color:#44495a;cursor:pointer;display:inline-flex;align-items:center;gap:7px}.button:hover{border-color:#b9b4f2;background:#faf9ff}.button.primary{background:#6658e8;border-color:#6658e8;color:#fff}.button:disabled{opacity:.45;cursor:not-allowed}.upload{min-height:330px;display:grid;place-items:center;padding:30px}.dropzone{width:min(100%,600px);min-height:240px;border:1.5px dashed #d9d9e7;border-radius:13px;background:#fcfcfe;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.dropzone.drag{border-color:#796cf0;background:#f8f7ff}.upload-icon{width:51px;height:51px;border-radius:15px;background:#efedff;color:#6858e8;display:grid;place-items:center;font-size:22px;margin-bottom:14px}.dropzone h2{font-size:16px}.dropzone p{font-size:12px;color:#888d9c}.hint{font-size:11px;color:#a1a5b0;margin-top:12px}.editor{display:none}.editor-layout{display:grid;grid-template-columns:1fr 260px;min-height:430px}.tree{padding:22px 24px;overflow:auto;max-height:70vh}.sidebar{border-left:1px solid #ececf2;background:#fcfcfe;padding:20px}.side-title{font-size:11px;text-transform:uppercase;letter-spacing:.9px;font-weight:750;color:#969aaa;margin-bottom:14px}.stat{font-size:12px;color:#5d6273;line-height:1.9}.sidebar-note{border-top:1px solid #e9eaf0;margin-top:20px;padding-top:16px;color:#85899a;font-size:11px;line-height:1.6}.node{margin:0 0 5px}.node-row{min-height:38px;display:flex;align-items:center;gap:8px;padding:4px 7px;border-radius:7px}.node-row:hover{background:#f8f8fc}.node-content{flex:1;min-width:0;display:flex;align-items:center;gap:9px}.twisty{border:0;background:none;color:#a1a5b2;width:15px;padding:0;cursor:pointer}.kind{font-size:10px;font-weight:650;color:#7869de;background:#f0efff;border-radius:5px;padding:4px 6px}.value{font-size:12px;color:#53596a;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.key-input,.value-input,.type-select{border:1px solid #dedfe8;border-radius:6px;padding:6px 8px;font:12px inherit;color:#33384a;background:#fff;min-width:0}.key-input{width:150px;flex:none}.value-input{flex:1;max-width:380px}.type-select{width:100px}.children{margin-left:24px;padding-left:11px;border-left:1px solid #ececf2}.node-tools{display:flex;gap:3px;opacity:.18}.node-row:hover .node-tools,.node-row:focus-within .node-tools{opacity:1}.icon-btn{width:25px;height:25px;border:0;background:transparent;border-radius:6px;color:#777c8d;cursor:pointer}.add-row{display:flex;margin:7px 0 11px}.add-btn{border:0;background:none;color:#7265da;font-size:11px;font-weight:650;cursor:pointer;padding:5px 4px}.alert{display:none;margin:14px 20px;padding:10px 12px;border-radius:8px;background:#fff5f3;color:#b24e3c;font-size:12px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,15px);opacity:0;background:#272a39;color:#fff;border-radius:8px;padding:11px 16px;font-size:12px}.toast.show{opacity:1;transform:translate(-50%,0)}input[type=file]{display:none}footer{text-align:center;color:#9a9eab;font-size:11px;margin-top:18px}.findbar{display:flex;gap:8px;align-items:center;padding:12px 18px;border-bottom:1px solid #ececf2;background:#fcfcfe;flex-wrap:wrap}.findbar>input:not([type=checkbox]){height:34px;border:1px solid #dedfe8;border-radius:7px;padding:0 9px;font:12px inherit;min-width:130px;flex:1}.findbar .button{padding:8px 10px}.find-status{font-size:11px;color:#5144c5;background:#f0efff;border:1px solid #e5e2ff;border-radius:7px;padding:8px 10px;min-width:150px;text-align:center;font-weight:650}.toggle-option{display:inline-flex;align-items:center;justify-content:center;gap:5px;height:32px;padding:0 9px;border:1px solid #e3e4ec;border-radius:7px;background:#fff;color:#5d6273;font-size:11px;white-space:nowrap;cursor:pointer}.toggle-option input{appearance:auto;width:14px;height:14px;margin:0;padding:0;flex:none;accent-color:#6658e8}.node-row.find-hit{background:#fff4ce;outline:1px solid #f3d779}@media(max-width:760px){.shell{padding:20px 13px 40px}.toolbar{padding:0 12px}.actions{gap:5px}.button{padding:8px;font-size:11px}.editor-layout{grid-template-columns:1fr}.sidebar{border-left:0;border-top:1px solid #ececf2}.tree{padding:15px 10px;max-height:none}.key-input{width:95px}.type-select{width:78px}.node-tools{opacity:.65}.upload{padding:16px}.dropzone{min-height:220px}}
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#202434;background:#f6f7fb;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-height:100vh}.shell{max-width:1150px;margin:auto;padding:32px 24px 64px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:44px}.brand{display:flex;gap:11px;align-items:center;font-weight:750;font-size:16px}.brand-icon{width:36px;height:36px;background:#6658e8;color:white;border-radius:11px;display:grid;place-items:center}.privacy{font-size:12px;color:#777d8e}.privacy i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#39b77b;margin-right:7px}.intro{max-width:700px;margin:0 auto 28px;text-align:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.35px;color:#6d5be8;font-weight:750}.intro h1{font-size:clamp(30px,5vw,44px);letter-spacing:-1.7px;margin:12px 0}.intro p{color:#74798a;font-size:15px}.workspace{background:#fff;border:1px solid #e9eaf0;border-radius:16px;box-shadow:0 12px 36px #29264d0b;overflow:hidden}.toolbar{height:60px;border-bottom:1px solid #ececf2;display:flex;align-items:center;justify-content:space-between;padding:0 20px}.file-info{display:flex;align-items:center;gap:10px}.file-icon{width:33px;height:33px;border-radius:9px;background:#f0efff;color:#685ae4;display:grid;place-items:center}.file-name{font-size:13px;font-weight:650}.file-meta{font-size:11px;color:#969aaa;margin-top:2px}.actions{display:flex;gap:8px}.button{border:1px solid #e4e5ec;background:#fff;border-radius:8px;padding:9px 12px;font:600 12px inherit;color:#44495a;cursor:pointer;display:inline-flex;align-items:center;gap:7px}.button:hover{border-color:#b9b4f2;background:#faf9ff}.button.primary{background:#6658e8;border-color:#6658e8;color:#fff}.button:disabled{opacity:.45;cursor:not-allowed}.upload{min-height:330px;display:grid;place-items:center;padding:30px}.dropzone{width:min(100%,600px);min-height:240px;border:1.5px dashed #d9d9e7;border-radius:13px;background:#fcfcfe;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.dropzone.drag{border-color:#796cf0;background:#f8f7ff}.upload-icon{width:51px;height:51px;border-radius:15px;background:#efedff;color:#6858e8;display:grid;place-items:center;font-size:22px;margin-bottom:14px}.dropzone h2{font-size:16px}.dropzone p{font-size:12px;color:#888d9c}.hint{font-size:11px;color:#a1a5b0;margin-top:12px}.editor{display:none}.editor-layout{display:grid;grid-template-columns:1fr 260px;min-height:430px}.tree{padding:22px 24px;overflow:auto;max-height:70vh}.sidebar{border-left:1px solid #ececf2;background:#fcfcfe;padding:20px}.side-title{font-size:11px;text-transform:uppercase;letter-spacing:.9px;font-weight:750;color:#969aaa;margin-bottom:14px}.stat{font-size:12px;color:#5d6273;line-height:1.9}.sidebar-note{border-top:1px solid #e9eaf0;margin-top:20px;padding-top:16px;color:#85899a;font-size:11px;line-height:1.6}.node{margin:0 0 5px}.node-row{min-height:38px;display:flex;align-items:center;gap:8px;padding:4px 7px;border-radius:7px}.node-row:hover{background:#f8f8fc}.node-content{flex:1;min-width:0;display:flex;align-items:center;gap:9px}.twisty{border:0;background:none;color:#a1a5b2;width:15px;padding:0;cursor:pointer}.kind{font-size:10px;font-weight:650;color:#7869de;background:#f0efff;border-radius:5px;padding:4px 6px}.value{font-size:12px;color:#53596a;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.key-input,.value-input,.type-select{border:1px solid #dedfe8;border-radius:6px;padding:6px 8px;font:12px inherit;color:#33384a;background:#fff;min-width:0}.key-input{width:150px;flex:none}.value-input{flex:1;max-width:380px}.type-select{width:100px}.children{margin-left:24px;padding-left:11px;border-left:1px solid #ececf2}.node-tools{display:flex;gap:3px;opacity:.18}.node-row:hover .node-tools,.node-row:focus-within .node-tools{opacity:1}.icon-btn{width:25px;height:25px;border:0;background:transparent;border-radius:6px;color:#777c8d;cursor:pointer}.add-row{display:flex;margin:7px 0 11px}.add-btn{border:0;background:none;color:#7265da;font-size:11px;font-weight:650;cursor:pointer;padding:5px 4px}.alert{display:none;margin:14px 20px;padding:10px 12px;border-radius:8px;background:#fff5f3;color:#b24e3c;font-size:12px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,15px);opacity:0;background:#272a39;color:#fff;border-radius:8px;padding:11px 16px;font-size:12px;transition:all 0.2s}.toast.show{opacity:1;transform:translate(-50%,0)}input[type=file]{display:none}footer{text-align:center;color:#9a9eab;font-size:11px;margin-top:18px}.findbar{display:flex;gap:8px;align-items:center;padding:12px 18px;border-bottom:1px solid #ececf2;background:#fcfcfe;flex-wrap:wrap}.findbar>input:not([type=checkbox]){height:34px;border:1px solid #dedfe8;border-radius:7px;padding:0 9px;font:12px inherit;min-width:130px;flex:1}.findbar .button{padding:8px 10px}.find-status{font-size:11px;color:#5144c5;background:#f0efff;border:1px solid #e5e2ff;border-radius:7px;padding:8px 10px;min-width:150px;text-align:center;font-weight:650}.toggle-option{display:inline-flex;align-items:center;justify-content:center;gap:5px;height:32px;padding:0 9px;border:1px solid #e3e4ec;border-radius:7px;background:#fff;color:#5d6273;font-size:11px;white-space:nowrap;cursor:pointer}.toggle-option input{appearance:auto;width:14px;height:14px;margin:0;padding:0;flex:none;accent-color:#6658e8}.node-row.find-hit{background:#fff4ce;outline:1px solid #f3d779}@media(max-width:760px){.shell{padding:20px 13px 40px}.toolbar{padding:0 12px}.actions{gap:5px}.button{padding:8px;font-size:11px}.editor-layout{grid-template-columns:1fr}.sidebar{border-left:0;border-top:1px solid #ececf2}.tree{padding:15px 10px;max-height:none}.key-input{width:95px}.type-select{width:78px}.node-tools{opacity:.65}.upload{padding:16px}.dropzone{min-height:220px}}
     .source-view{display:none;padding:16px 18px 20px}.source-actions{display:flex;gap:10px;align-items:center;margin-bottom:10px}.source-actions strong{font-size:12px}.source-actions span{font-size:11px;color:#85899a;flex:1}.source-view textarea{display:block;width:100%;min-height:58vh;resize:vertical;border:1px solid #dedfe8;border-radius:8px;padding:14px;background:#fbfbfd;color:#303548;font:13px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;tab-size:2;white-space:pre;overflow:auto}.xml-findbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:13px}.xml-findbar>input:not([type=checkbox]){height:33px;border:1px solid #dedfe8;border-radius:7px;padding:0 9px;font:12px inherit;min-width:120px;flex:1}.xml-findbar label,.xml-findbar span{font-size:11px;color:#85899a;white-space:nowrap}.xml-findbar .button{padding:8px 10px}#xmlFindStatus{color:#5144c5;background:#f0efff;border:1px solid #e5e2ff;border-radius:7px;padding:8px 10px;min-width:150px;text-align:center;font-weight:650}
   </style>
 </head>
@@ -17,57 +17,632 @@
     <section class="workspace">
       <div class="toolbar"><div class="file-info"><div class="file-icon">▤</div><div><div class="file-name" id="fileName">Chưa có tệp nào</div><div class="file-meta" id="fileMeta">Chọn tệp plist để bắt đầu</div></div></div><div class="actions"><button class="button" id="xmlViewButton" style="display:none">&lt;/&gt; <span>XML</span></button><button class="button" id="openButton">↑ <span>Mở tệp</span></button><button class="button" id="saveXMLButton" disabled>↓ <span>Tải XML</span></button><button class="button primary" id="saveButton" disabled>↓ <span>Tải xuống</span></button></div></div>
       <div class="alert" id="error"></div>
-      <div class="upload" id="upload"><div class="dropzone" id="dropzone"><div class="upload-icon">↑</div><h2>Kéo thả tệp plist vào đây</h2><p>hoặc chọn tệp từ thiết bị của bạn</p><button class="button primary" id="browseButton">Chọn tệp plist</button><div class="hint">Hỗ trợ định dạng XML plist · Tối đa 20 MB</div></div></div>
-      <div class="editor" id="editor"><div class="findbar"><input id="findInput" placeholder="Tìm trong khóa và giá trị" aria-label="Tìm kiếm"><input id="replaceInput" placeholder="Thay bằng... · nhóm: ${1}" aria-label="Thay bằng"><label class="toggle-option"><input id="caseSensitive" type="checkbox"><span>Aa</span></label><label class="toggle-option"><input id="regexMode" type="checkbox"><span>Regex</span></label><button class="button" id="findPrev">↑</button><button class="button" id="findNext">↓ Tìm</button><button class="button" id="replaceOne">Thay</button><button class="button" id="replaceAll">Thay tất cả</button><span class="find-status" id="findStatus"></span></div><div class="editor-layout"><div class="tree" id="tree"></div><aside class="sidebar"><div class="side-title">Thông tin tệp</div><div class="stat" id="stats"></div><div class="sidebar-note">Thay đổi được lưu khi bạn tải tệp xuống. Các mục mới có thể thêm bằng nút + bên cạnh mỗi nhóm.</div></aside></div><div class="source-view" id="sourceView"><div class="xml-findbar"><input id="xmlFind" placeholder="Tìm trong XML..."><input id="xmlReplace" placeholder="Thay bằng... · nhóm: ${1}"><label class="toggle-option"><input id="xmlCase" type="checkbox"><span>Aa</span></label><label class="toggle-option"><input id="xmlRegex" type="checkbox"><span>Regex</span></label><button class="button" id="xmlPrev">↑</button><button class="button" id="xmlNext">↓ Tìm</button><button class="button" id="xmlReplaceOne">Thay</button><button class="button" id="xmlReplaceAll">Thay tất cả</button><span id="xmlFindStatus">0 kết quả</span></div><div class="source-actions"><strong>XML plist</strong><span>Sửa nội dung XML rồi nhấn “Áp dụng thay đổi”.</span><button class="button" id="cancelXML">Quay lại</button><button class="button primary" id="applyXML">Áp dụng thay đổi</button></div><textarea id="xmlSource" spellcheck="false" aria-label="Nội dung XML plist"></textarea></div></div>
+      <div class="upload" id="upload"><div class="dropzone" id="dropzone"><div class="upload-icon">↑</div><h2>Kéo thả tệp plist vào đây</h2><p>hoặc chọn tệp từ thiết bị của bạn</p><button class="button primary" id="browseButton">Chọn tệp plist</button><div class="hint">Hỗ trợ định dạng XML plist & Binary Plist · Tối đa 20 MB</div></div></div>
+      <div class="editor" id="editor"><div class="findbar"><input id="findInput" placeholder="Tìm trong khóa và giá trị" aria-label="Tìm kiếm"><input id="replaceInput" placeholder="Thay bằng..." aria-label="Thay bằng"><label class="toggle-option"><input id="caseSensitive" type="checkbox"><span>Aa</span></label><label class="toggle-option"><input id="regexMode" type="checkbox"><span>Regex</span></label><button class="button" id="findPrev">↑</button><button class="button" id="findNext">↓ Tìm</button><button class="button" id="replaceOne">Thay</button><button class="button" id="replaceAll">Thay tất cả</button><span class="find-status" id="findStatus"></span></div><div class="editor-layout"><div class="tree" id="tree"></div><aside class="sidebar"><div class="side-title">Thông tin tệp</div><div class="stat" id="stats"></div><div class="sidebar-note">Thay đổi được lưu khi bạn tải tệp xuống. Các mục mới có thể thêm bằng nút + bên cạnh mỗi nhóm.</div></aside></div><div class="source-view" id="sourceView"><div class="xml-findbar"><input id="xmlFind" placeholder="Tìm trong XML..."><input id="xmlReplace" placeholder="Thay bằng..."><label class="toggle-option"><input id="xmlCase" type="checkbox"><span>Aa</span></label><label class="toggle-option"><input id="xmlRegex" type="checkbox"><span>Regex</span></label><button class="button" id="xmlPrev">↑</button><button class="button" id="xmlNext">↓ Tìm</button><button class="button" id="xmlReplaceOne">Thay</button><button class="button" id="xmlReplaceAll">Thay tất cả</button><span id="xmlFindStatus">0 kết quả</span></div><div class="source-actions"><strong>XML plist</strong><span>Sửa nội dung XML rồi nhấn “Áp dụng thay đổi”.</span><button class="button" id="cancelXML">Quay lại</button><button class="button primary" id="applyXML">Áp dụng thay đổi</button></div><textarea id="xmlSource" spellcheck="false" aria-label="Nội dung XML plist"></textarea></div></div>
     </section>
     <footer>Plist Studio · Dữ liệu được xử lý cục bộ trên thiết bị của bạn</footer>
   </main>
   <input type="file" id="fileInput" accept=".plist,application/xml,text/xml">
   <div class="toast" id="toast">Đã cập nhật</div>
+
 <script>
 (()=>{
-  const $=id=>document.getElementById(id), fileInput=$('fileInput'); let root=null,filename='document.plist',binaryMode=false,searchMatches=[],searchIndex=-1,sourceOpen=false,xmlMatches=[],xmlIndex=-1;
+  const $=id=>document.getElementById(id), fileInput=$('fileInput'); 
+  let root=null, filename='document.plist', binaryMode=false, searchMatches=[], searchIndex=-1, sourceOpen=false, xmlMatches=[], xmlIndex=-1;
   const types=['string','integer','real','boolean','date','data','dict','array'];
+
+  function showToast(msg="Đã cập nhật"){
+    const t=$('toast'); t.textContent=msg; t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'), 2000);
+  }
+
   function xmlError(doc){return doc.querySelector('parsererror')}
-  function fromXML(el){const t=el.tagName.toLowerCase();if(t==='dict'){let entries=[];for(let i=0;i<el.children.length;){const k=el.children[i++];if(k.tagName.toLowerCase()!=='key'||i>=el.children.length)throw Error('Cấu trúc dict không hợp lệ: mỗi giá trị cần có một key.');entries.push({key:k.textContent,value:fromXML(el.children[i++])})}return{type:'dict',entries}}
-    if(t==='array')return{type:'array',items:Array.from(el.children,fromXML)};if(['string','integer','real','date','data'].includes(t))return{type:t,value:el.textContent};if(t==='true'||t==='false')return{type:'boolean',value:t==='true'};throw Error('Kiểu dữ liệu không được hỗ trợ: '+t)}
-  function parse(text){const doc=new DOMParser().parseFromString(text,'application/xml');if(xmlError(doc))throw Error('Không đọc được XML. Hãy kiểm tra định dạng tệp plist.');const p=doc.documentElement;if(!p||p.tagName.toLowerCase()!=='plist')throw Error('Tệp không có phần tử gốc <plist>.');const els=Array.from(p.children).filter(e=>e.nodeType===1);if(els.length!==1)throw Error('Plist cần có đúng một giá trị gốc.');return fromXML(els[0])}
-  // Apple thường lưu plist ở dạng nhị phân (bplist00); đọc trực tiếp định dạng này để không báo lỗi XML giả.
-  function parseBinary(buffer){const b=new Uint8Array(buffer),v=new DataView(buffer);if(b.length<40||new TextDecoder().decode(b.subarray(0,8))!=='bplist00')throw Error('Tệp plist nhị phân không hợp lệ.');const trailer=b.length-32,offsetSize=b[trailer+6],refSize=b[trailer+7],count=Number(v.getBigUint64(trailer+8)),top=Number(v.getBigUint64(trailer+16)),table=Number(v.getBigUint64(trailer+24));if(!count||count>100000||table>=trailer||offsetSize<1||offsetSize>8||refSize<1||refSize>8)throw Error('Bảng dữ liệu plist nhị phân không hợp lệ.');const offsets=[];for(let i=0;i<count;i++){let n=0;for(let j=0;j<offsetSize;j++)n=n*256+b[table+i*offsetSize+j];offsets.push(n)}const readInt=(at,size)=>{let n=0n;for(let j=0;j<size;j++)n=(n<<8n)|BigInt(b[at+j]);return n};const sizeAt=(at,info)=>{if(info<15)return[info,at+1];const marker=b[at+1];if((marker>>4)!==1)throw Error('Độ dài plist nhị phân không hợp lệ.');const bytes=1<<(marker&15);return[Number(readInt(at+2,bytes)),at+2+bytes]};const cache=new Map(),active=new Set();function ref(at){let n=0;for(let j=0;j<refSize;j++)n=n*256+b[at+j];if(n>=count)throw Error('Tham chiếu plist nhị phân không hợp lệ.');return n}function obj(id){if(cache.has(id))return cache.get(id);if(active.has(id))throw Error('Plist có tham chiếu vòng lặp không được hỗ trợ.');active.add(id);let at=offsets[id],m=b[at++],kind=m>>4,info=m&15,result;if(kind===0){if(info===8||info===9)result={type:'boolean',value:info===9};else throw Error('Kiểu đối tượng plist nhị phân không được hỗ trợ.')}else if(kind===1){const size=1<<info;let n=readInt(at,size);if(n&(1n<<BigInt(size*8-1)))n-=1n<<BigInt(size*8);result={type:'integer',value:String(n)}}else if(kind===2){const size=1<<info;result={type:'real',value:String(size===4?v.getFloat32(at):v.getFloat64(at))}}else if(kind===3){const seconds=v.getFloat64(at);result={type:'date',value:new Date(Date.UTC(2001,0,1)+seconds*1000).toISOString()}}else if(kind===4||kind===5||kind===6){let len,next;if(info===15){[len,next]=sizeAt(at-1,info)}else{len=info;next=at}if(kind===4){const bytes=b.slice(next,next+len);let binary='';bytes.forEach(x=>binary+=String.fromCharCode(x));result={type:'data',value:btoa(binary)}}else if(kind===5)result={type:'string',value:String.fromCharCode(...b.slice(next,next+len))};else{let s='';for(let j=0;j<len;j++)s+=String.fromCharCode((b[next+j*2]<<8)|b[next+j*2+1]);result={type:'string',value:s}}}else if(kind===8){result={type:'integer',value:String(readInt(at,info+1))}}else if(kind===10||kind===12||kind===13){let len,next;if(info===15)[len,next]=sizeAt(at-1,info);else{len=info;next=at}const vals=[];for(let j=0;j<len*(kind===13?2:1);j++)vals.push(ref(next+j*refSize));if(kind===10||kind===12)result={type:'array',items:vals.map(obj)};else{const entries=[];for(let j=0;j<len;j++){const key=obj(vals[j]),value=obj(vals[j+len]);if(key.type!=='string')throw Error('Khóa plist dictionary phải là chuỗi.');entries.push({key:key.value,value})}result={type:'dict',entries}}}else throw Error('Tệp chứa kiểu plist nhị phân chưa được hỗ trợ.');active.delete(id);cache.set(id,result);return result}return obj(top)}
+  
+  function fromXML(el){
+    const t=el.tagName.toLowerCase();
+    if(t==='dict'){
+      let entries=[];
+      for(let i=0; i<el.children.length;){
+        const k=el.children[i++];
+        if(!k || k.tagName.toLowerCase()!=='key'|| i>=el.children.length) throw Error('Cấu trúc dict không hợp lệ: mỗi giá trị cần có một key.');
+        entries.push({key:k.textContent, value:fromXML(el.children[i++])});
+      }
+      return {type:'dict', entries};
+    }
+    if(t==='array') return {type:'array', items:Array.from(el.children, fromXML)};
+    if(['string','integer','real','date','data'].includes(t)) return {type:t, value:el.textContent};
+    if(t==='true'||t==='false') return {type:'boolean', value:t==='true'};
+    throw Error('Kiểu dữ liệu không được hỗ trợ: '+t);
+  }
+
+  function parse(text){
+    const doc=new DOMParser().parseFromString(text,'application/xml');
+    if(xmlError(doc)) throw Error('Không đọc được XML. Hãy kiểm tra định dạng tệp plist.');
+    const p=doc.documentElement;
+    if(!p||p.tagName.toLowerCase()!=='plist') throw Error('Tệp không có phần tử gốc <plist>.');
+    const els=Array.from(p.children).filter(e=>e.nodeType===1);
+    if(els.length!==1) throw Error('Plist cần có đúng một giá trị gốc.');
+    return fromXML(els[0]);
+  }
+
+  // --- PARSE BINARY PLIST (bplist00) ---
+  function parseBinary(buffer){
+    const b=new Uint8Array(buffer), v=new DataView(buffer);
+    if(b.length<40 || new TextDecoder().decode(b.subarray(0,8))!=='bplist00') throw Error('Tệp plist nhị phân không hợp lệ.');
+    
+    const trailer=b.length-32;
+    const offsetSize=b[trailer+6], refSize=b[trailer+7];
+    const count=Number(v.getBigUint64(trailer+8)), top=Number(v.getBigUint64(trailer+16)), table=Number(v.getBigUint64(trailer+24));
+    
+    if(!count || table>=trailer || offsetSize<1 || offsetSize>8 || refSize<1 || refSize>8) throw Error('Bảng dữ liệu plist nhị phân không hợp lệ.');
+    
+    const offsets=[];
+    for(let i=0; i<count; i++){
+      let n=0;
+      for(let j=0; j<offsetSize; j++) n = n*256 + b[table + i*offsetSize + j];
+      offsets.push(n);
+    }
+
+    const readInt=(at,size)=>{
+      let n=0n;
+      for(let j=0; j<size; j++) n=(n<<8n)|BigInt(b[at+j]);
+      return n;
+    };
+
+    const sizeAt=(at,info)=>{
+      if(info<15) return [info, at+1];
+      const marker=b[at+1];
+      if((marker>>4)!==1) throw Error('Độ dài plist nhị phân không hợp lệ.');
+      const bytes=1<<(marker&15);
+      return [Number(readInt(at+2, bytes)), at+2+bytes];
+    };
+
+    const cache=new Map(), active=new Set();
+
+    function ref(at){
+      let n=0;
+      for(let j=0; j<refSize; j++) n=n*256+b[at+j];
+      if(n>=count) throw Error('Tham chiếu plist nhị phân không hợp lệ.');
+      return n;
+    }
+
+    function obj(id){
+      if(cache.has(id)) return cache.get(id);
+      if(active.has(id)) throw Error('Plist có tham chiếu vòng lặp.');
+      active.add(id);
+
+      let at=offsets[id], m=b[at++], kind=m>>4, info=m&15, result;
+
+      if(kind===0){
+        if(info===8||info===9) result={type:'boolean', value:info===9};
+        else throw Error('Kiểu boolean plist nhị phân không hợp lệ.');
+      }else if(kind===1){
+        const size=1<<info;
+        let n=readInt(at,size);
+        if(n&(1n<<BigInt(size*8-1))) n-=1n<<BigInt(size*8);
+        result={type:'integer', value:String(n)};
+      }else if(kind===2){
+        const size=1<<info;
+        result={type:'real', value:String(size===4?v.getFloat32(at):v.getFloat64(at))};
+      }else if(kind===3){
+        const seconds=v.getFloat64(at);
+        result={type:'date', value:new Date(Date.UTC(2001,0,1)+seconds*1000).toISOString()};
+      }else if(kind===4 || kind===5 || kind===6){
+        let len, next;
+        if(info===15) [len,next]=sizeAt(at-1,info);
+        else {len=info; next=at;}
+
+        if(kind===4){
+          let binary=''; const slice=b.subarray(next, next+len);
+          for(let i=0; i<slice.length; i++) binary += String.fromCharCode(slice[i]);
+          result={type:'data', value:btoa(binary)};
+        }else if(kind===5){
+          result={type:'string', value:new TextDecoder('utf-8').decode(b.subarray(next, next+len))};
+        }else{
+          result={type:'string', value:new TextDecoder('utf-16be').decode(b.subarray(next, next+len*2))};
+        }
+      }else if(kind===8){
+        result={type:'integer', value:String(readInt(at,info+1))};
+      }else if(kind===10 || kind===12 || kind===13){
+        let len, next;
+        if(info===15) [len,next]=sizeAt(at-1,info);
+        else {len=info; next=at;}
+
+        const vals=[];
+        for(let j=0; j<len*(kind===13?2:1); j++) vals.push(ref(next+j*refSize));
+
+        if(kind===10 || kind===12){
+          result={type:'array', items:vals.map(obj)};
+        }else{
+          const entries=[];
+          for(let j=0; j<len; j++){
+            const keyObj=obj(vals[j]), valObj=obj(vals[j+len]);
+            entries.push({key:String(keyObj.value), value:valObj});
+          }
+          result={type:'dict', entries};
+        }
+      }else throw Error('Tệp chứa kiểu plist nhị phân chưa được hỗ trợ.');
+
+      active.delete(id);
+      cache.set(id,result);
+      return result;
+    }
+    return obj(top);
+  }
+
   const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;');
-  function toXML(n,depth=2){const pad='  '.repeat(depth);if(n.type==='dict')return pad+'<dict>\n'+n.entries.map(x=>pad+'  <key>'+esc(x.key)+'</key>\n'+toXML(x.value,depth+1)).join('\n')+'\n'+pad+'</dict>';if(n.type==='array')return pad+'<array>\n'+n.items.map(x=>toXML(x,depth+1)).join('\n')+'\n'+pad+'</array>';if(n.type==='boolean')return pad+(n.value?'<true/>':'<false/>');return pad+'<'+n.type+'>'+esc(n.value||'')+'</'+n.type+'>'}
-  function serialize(){return '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0">\n'+toXML(root)+'\n</plist>\n'}
-  function serializeBinary(){const objects=[];function add(n){const id=objects.length;objects.push(null);let entry;if(n.type==='dict'){const keys=n.entries.map(x=>add({type:'string',value:x.key})),vals=n.entries.map(x=>add(x.value));entry={kind:13,refs:[...keys,...vals]}}else if(n.type==='array')entry={kind:10,refs:n.items.map(add)};else if(n.type==='boolean')entry={bytes:[0x08+(n.value?1:0)]};else if(n.type==='integer'){let v=BigInt(n.value||0),size=1;while(size<8&&(v<-(1n<<BigInt(size*8-1))||v>=(1n<<BigInt(size*8-1))))size*=2;let unsigned=v<0?(1n<<BigInt(size*8))+v:v;const pow=Math.log2(size);entry={bytes:[0x10+pow,...Array.from({length:size},(_,i)=>Number((unsigned>>BigInt((size-i-1)*8))&255n))]}}else if(n.type==='real'){const bytes=new Uint8Array(8);new DataView(bytes.buffer).setFloat64(0,Number(n.value)||0);entry={bytes:[0x23,...bytes]}}else if(n.type==='date'){const bytes=new Uint8Array(8),seconds=(Date.parse(n.value)-Date.UTC(2001,0,1))/1000;new DataView(bytes.buffer).setFloat64(0,Number.isFinite(seconds)?seconds:0);entry={bytes:[0x33,...bytes]}}else if(n.type==='data'){let raw;try{raw=atob((n.value||'').replace(/\s/g,''))}catch{raw=''}entry={bytes:withLength(0x40,Array.from(raw,c=>c.charCodeAt(0)))}}else{const str=String(n.value??'');const cps=Array.from(str);if(cps.every(c=>c.charCodeAt(0)<128))entry={bytes:withLength(0x50,Array.from(str,c=>c.charCodeAt(0)))};else{const units=[];for(const c of str){const cp=c.codePointAt(0);if(cp<=0xffff)units.push(cp);else{const x=cp-0x10000;units.push(0xd800+(x>>10),0xdc00+(x&1023))}}const bytes=[];for(const u of units)bytes.push(u>>8,u&255);entry={bytes:withLength(0x60,bytes,units.length)}}}objects[id]=entry;return id}function withLength(marker,data,count=data.length){const head=count<15?[marker+count]:[marker+15,...uintBytes(count)];return[...head,...data]}function uintBytes(n){let size=1;while(size<8&&n>=2**(size*8))size*=2;const out=[0x10+Math.log2(size)];for(let i=size-1;i>=0;i--)out.push(Math.floor(n/2**(i*8))&255);return out}function refSize(n){return n<256?1:n<65536?2:n<16777216?3:4}const top=add(root),refs=refSize(objects.length-1),encoded=objects.map(o=>o.bytes||withLength(o.kind===10?0xa0:0xd0,o.refs.flatMap(x=>Array.from({length:refs},(_,i)=>x>>((refs-i-1)*8)&255)),o.refs.length));const out=[...new TextEncoder().encode('bplist00')],offsets=[];for(const obj of encoded){offsets.push(out.length);out.push(...obj)}const table=out.length,offSize=refSize(table);for(const offset of offsets){for(let i=offSize-1;i>=0;i--)out.push(Math.floor(offset/2**(i*8))&255)}out.push(...new Array(6).fill(0),offSize,refs,...uint64(objects.length),...uint64(top),...uint64(table));return new Uint8Array(out)}function uint64(n){let x=BigInt(n),a=new Array(8);for(let i=7;i>=0;i--){a[i]=Number(x&255n);x>>=8n}return a}
+  
+  function toXML(n,depth=2){
+    const pad='  '.repeat(depth);
+    if(n.type==='dict') return pad+'<dict>\n'+n.entries.map(x=>pad+'  <key>'+esc(x.key)+'</key>\n'+toXML(x.value,depth+1)).join('\n')+'\n'+pad+'</dict>';
+    if(n.type==='array') return pad+'<array>\n'+n.items.map(x=>toXML(x,depth+1)).join('\n')+'\n'+pad+'</array>';
+    if(n.type==='boolean') return pad+(n.value?'<true/>':'<false/>');
+    return pad+'<'+n.type+'>'+esc(n.value||'')+'</'+n.type+'>';
+  }
+
+  function serialize(){
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0">\n'+toXML(root)+'\n</plist>\n';
+  }
+
+  // --- SERIALIZE BINARY PLIST ---
+  function serializeBinary(){
+    const objects=[];
+    function add(n){
+      const id=objects.length;
+      objects.push(null);
+      let entry;
+
+      if(n.type==='dict'){
+        const keys=n.entries.map(x=>add({type:'string',value:x.key}));
+        const vals=n.entries.map(x=>add(x.value));
+        entry={kind:13, refs:[...keys,...vals]};
+      }else if(n.type==='array'){
+        entry={kind:10, refs:n.items.map(add)};
+      }else if(n.type==='boolean'){
+        entry={bytes:[0x08+(n.value?1:0)]};
+      }else if(n.type==='integer'){
+        let v=BigInt(n.value||0), size=1;
+        while(size<8 && (v < -(1n<<BigInt(size*8-1)) || v >= (1n<<BigInt(size*8-1)))) size*=2;
+        let unsigned = v < 0 ? (1n<<BigInt(size*8)) + v : v;
+        const pow=Math.log2(size);
+        entry={bytes:[0x10+pow, ...Array.from({length:size}, (_,i)=>Number((unsigned >> BigInt((size-i-1)*8)) & 255n))]};
+      }else if(n.type==='real'){
+        const bytes=new Uint8Array(8);
+        new DataView(bytes.buffer).setFloat64(0, Number(n.value)||0);
+        entry={bytes:[0x23, ...bytes]};
+      }else if(n.type==='date'){
+        const bytes=new Uint8Array(8);
+        const seconds=(Date.parse(n.value)-Date.UTC(2001,0,1))/1000;
+        new DataView(bytes.buffer).setFloat64(0, Number.isFinite(seconds)?seconds:0);
+        entry={bytes:[0x33, ...bytes]};
+      }else if(n.type==='data'){
+        let raw; try{ raw=atob((n.value||'').replace(/\s/g,'')); }catch{ raw=''; }
+        entry={bytes:withLength(0x40, Array.from(raw, c=>c.charCodeAt(0)))};
+      }else{
+        const str=String(n.value??'');
+        let isAscii=true;
+        for(let i=0; i<str.length; i++){ if(str.charCodeAt(i)>=128){ isAscii=false; break; } }
+
+        if(isAscii){
+          entry={bytes:withLength(0x50, Array.from(str, c=>c.charCodeAt(0)))};
+        }else{
+          const u16=[];
+          for(let i=0; i<str.length; i++){
+            const code=str.charCodeAt(i);
+            u16.push(code>>8, code&255);
+          }
+          entry={bytes:withLength(0x60, u16, str.length)};
+        }
+      }
+      objects[id]=entry;
+      return id;
+    }
+
+    function withLength(marker, data, count=data.length){
+      if(count<15) return [marker+count, ...data];
+      const head=uintBytes(count);
+      return [marker+15, ...head, ...data];
+    }
+
+    function uintBytes(n){
+      let size=1;
+      while(size<8 && n >= (2**(size*8))) size*=2;
+      const out=[0x10+Math.log2(size)];
+      for(let i=size-1; i>=0; i--) out.push(Math.floor(n/(2**(i*8))) & 255);
+      return out;
+    }
+
+    function refSize(n){ return n<256 ? 1 : n<65536 ? 2 : n<16777216 ? 3 : 4; }
+
+    const top=add(root);
+    const refs=refSize(objects.length-1);
+    
+    const encoded=objects.map(o => o.bytes || withLength(o.kind===10?0xa0:0xd0, o.refs.flatMap(x=>{
+      const arr=[];
+      for(let i=refs-1; i>=0; i--) arr.push((x >> (i*8)) & 255);
+      return arr;
+    }), o.refs.length));
+
+    const out=[...new TextEncoder().encode('bplist00')], offsets=[];
+    for(const obj of encoded){
+      offsets.push(out.length);
+      out.push(...obj);
+    }
+
+    const table=out.length, offSize=refSize(table);
+    for(const offset of offsets){
+      for(let i=offSize-1; i>=0; i--) out.push(Math.floor(offset/(2**(i*8))) & 255);
+    }
+
+    out.push(...new Array(6).fill(0), offSize, refs, ...uint64(objects.length), ...uint64(top), ...uint64(table));
+    return new Uint8Array(out);
+  }
+
+  function uint64(n){
+    let x=BigInt(n), a=new Array(8);
+    for(let i=7; i>=0; i--){ a[i]=Number(x&255n); x>>=8n; }
+    return a;
+  }
+
   const label=t=>({dict:'Dictionary',array:'Array',string:'String',integer:'Integer',real:'Real',boolean:'Boolean',date:'Date',data:'Data'}[t]||t);
-  function counts(n,c={total:0,dict:0,array:0}){c.total++;if(n.type==='dict'){c.dict++;n.entries.forEach(x=>counts(x.value,c))}if(n.type==='array'){c.array++;n.items.forEach(x=>counts(x,c))}return c}
-  function defaultNode(t='string'){return t==='dict'?{type:t,entries:[]}:t==='array'?{type:t,items:[]}:t==='boolean'?{type:t,value:false}:{type:t,value:''}}
-  function collectMatches(){const q=$('findInput').value;if(!q)return[];const sensitive=$('caseSensitive').checked,isRegex=$('regexMode').checked;let re;try{re=new RegExp(isRegex?q:q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),sensitive?'':'i')}catch(e){$('findStatus').textContent='Regex không hợp lệ';return[]}const matches=[];function has(s){re.lastIndex=0;return re.test(s)}function walk(n){if(n.type==='dict')for(const e of n.entries){if(has(e.key))matches.push({target:e,field:'key'});walk(e.value)}else if(n.type==='array')n.items.forEach(walk);else if(n.type!=='boolean'&&has(String(n.value??'')))matches.push({target:n,field:'value'})}if(root)walk(root);return matches}
-  function render(){sourceOpen=false;searchMatches=collectMatches();const tree=$('tree');tree.innerHTML='';tree.append(renderNode(root,'root',null));const c=counts(root);$('stats').innerHTML=`Loại gốc <strong>${label(root.type)}</strong><br>Số giá trị <strong>${c.total}</strong><br>Dictionary <strong>${c.dict}</strong><br>Array <strong>${c.array}</strong>`;$('editor').style.display='block';$('upload').style.display='none';$('saveButton').disabled=false;$('saveXMLButton').disabled=false;$('xmlViewButton').style.display='inline-flex';$('sourceView').style.display='none';document.querySelector('.findbar').style.display='flex';document.querySelector('.editor-layout').style.display='grid';$('xmlViewButton').innerHTML='&lt;/&gt; <span>XML</span>';updateSearchStatus();if(searchIndex>=0&&searchMatches.length){const row=tree.querySelector(`[data-match="${searchIndex%searchMatches.length}"]`);row?.scrollIntoView({block:'nearest'})}}
-  function openXMLView(){if(sourceOpen){sourceOpen=false;$('sourceView').style.display='none';document.querySelector('.findbar').style.display='flex';document.querySelector('.editor-layout').style.display='grid';$('xmlViewButton').innerHTML='&lt;/&gt; <span>XML</span>';return}sourceOpen=true;$('xmlSource').value=serialize();$('sourceView').style.display='block';document.querySelector('.findbar').style.display='none';document.querySelector('.editor-layout').style.display='none';$('xmlViewButton').innerHTML='<span>Cây</span>'}
-  function renderNode(n,path,parent){const wrap=document.createElement('div');wrap.className='node';const row=document.createElement('div');row.className='node-row';const has=n.type==='dict'||n.type==='array';const twist=document.createElement('button');twist.className='twisty';twist.textContent=has?'⌄':'';row.append(twist);const content=document.createElement('div');content.className='node-content';if(parent?.type==='dict'){const key=document.createElement('input');key.className='key-input';key.value=parent.entries[path].key;key.setAttribute('aria-label','Tên khóa');key.oninput=()=>parent.entries[path].key=key.value;content.append(key)}const badge=document.createElement('span');badge.className='kind';badge.textContent=label(n.type);content.append(badge);
-    if(n.type==='boolean'){const select=document.createElement('select');select.className='value-input';select.innerHTML='<option value="false">false</option><option value="true">true</option>';select.value=String(n.value);select.onchange=()=>n.value=select.value==='true';content.append(select)}else if(has){const val=document.createElement('span');val.className='value';val.textContent=n.type==='dict'?`${n.entries.length} mục`:`${n.items.length} mục`;content.append(val)}else{const inp=document.createElement('input');inp.className='value-input';inp.value=n.value??'';inp.setAttribute('aria-label','Giá trị');inp.oninput=()=>n.value=inp.value;content.append(inp)}
-    const tools=document.createElement('div');tools.className='node-tools';const type=document.createElement('select');type.className='type-select';types.forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=label(t);type.append(o)});type.value=n.type;type.title='Đổi kiểu dữ liệu';type.onchange=()=>{const next=defaultNode(type.value);if(n.type==='dict'&&next.type==='dict')next.entries=n.entries;if(n.type==='array'&&next.type==='array')next.items=n.items;Object.keys(n).forEach(k=>delete n[k]);Object.assign(n,next);render()};tools.append(type);
-    if(parent){const del=document.createElement('button');del.className='icon-btn del';del.textContent='×';del.title='Xóa mục';del.onclick=()=>{if(parent.type==='dict')parent.entries.splice(path,1);else parent.items.splice(path,1);render()};tools.append(del)}row.append(content,tools);const entry=parent?.type==='dict'?parent.entries[path]:null;const hit=searchMatches.findIndex(m=>(entry&&m.target===entry&&m.field==='key')||(m.target===n&&m.field==='value'));if(hit>=0){row.dataset.match=hit;if(hit===searchIndex)row.classList.add('find-hit')}wrap.append(row);
-    if(has){const children=document.createElement('div');children.className='children';if(n.type==='dict'){n.entries.forEach((x,i)=>children.append(renderNode(x.value,i,n)));const add=makeAdd(children,n,'dict')}else{n.items.forEach((x,i)=>children.append(renderNode(x,i,n)));makeAdd(children,n,'array')}wrap.append(children);twist.onclick=()=>{const collapsed=children.style.display==='none';children.style.display=collapsed?'':'none';twist.textContent=collapsed?'⌄':'›'}}return wrap}
-  function makeAdd(container,n,type){const bar=document.createElement('div');bar.className='add-row';const btn=document.createElement('button');btn.className='add-btn';btn.textContent='+ Thêm '+(type==='dict'?'khóa':'mục');btn.onclick=()=>{const node=defaultNode();if(type==='dict')n.entries.push({key:'New key',value:node});else n.items.push(node);render()};bar.append(btn);container.append(bar)}
-  function updateSearchStatus(){const s=$('findStatus');if(!s)return;if($('regexMode').checked){try{new RegExp($('findInput').value,$('caseSensitive').checked?'':'i')}catch{s.textContent='Regex không hợp lệ';return}}s.textContent=searchMatches.length?`Tìm thấy ${searchMatches.length} kết quả${searchIndex>=0?` · ${searchIndex%searchMatches.length+1}/${searchMatches.length}`:''}`:'0 kết quả'}
-  function moveSearch(step){searchMatches=collectMatches();if(!searchMatches.length){searchIndex=-1;render();return}searchIndex=searchIndex<0?(step<0?searchMatches.length-1:0):(searchIndex+step+searchMatches.length)%searchMatches.length;render()}
-  function expandReplacement(template,args){const hasGroups=typeof args[args.length-1]==='object',offset=args[hasGroups?args.length-3:args.length-2],source=args[hasGroups?args.length-2:args.length-1],captures=args.slice(1,hasGroups?args.length-3:args.length-2);return template.replace(/\$\{(\d+)\}|\$(\$|&|`|'|\d{1,2})/g,(token,braced,plain)=>{if(braced){const i=Number(braced);return i===0?args[0]:(captures[i-1]??'')}if(plain==='$')return '$';if(plain==='&')return args[0];if(plain==='`')return source.slice(0,offset);if(plain==="'")return source.slice(offset+args[0].length);const i=Number(plain);if(i>0&&i<=captures.length)return captures[i-1]??'';if(i>=10&&Math.floor(i/10)<=captures.length)return String(captures[Math.floor(i/10)-1]??'')+String(i%10);return token})}
-  function replaceText(text,query,replacement,all,sensitive,isRegex=false){if(!query)return text;let pattern;try{pattern=isRegex?query:query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');const re=new RegExp(pattern,(all?'g':'')+(sensitive?'':'i'));return text.replace(re,(...args)=>expandReplacement(replacement,args))}catch{return text}}
-  function replaceCurrent(){searchMatches=collectMatches();if(!searchMatches.length)return;const i=searchIndex<0?0:searchIndex%searchMatches.length,m=searchMatches[i],q=$('findInput').value,r=$('replaceInput').value;m.target[m.field]=replaceText(String(m.target[m.field]??''),q,r,false,$('caseSensitive').checked,$('regexMode').checked);searchIndex=i;render()}
-  function replaceEverywhere(){const matches=collectMatches(),q=$('findInput').value;if(!matches.length||!q){searchIndex=-1;updateSearchStatus();return}const replacement=$('replaceInput').value,sensitive=$('caseSensitive').checked,isRegex=$('regexMode').checked;matches.forEach(m=>m.target[m.field]=replaceText(String(m.target[m.field]??''),q,replacement,true,sensitive,isRegex));searchIndex=-1;render()}
-  function refreshXMLMatches(){const text=$('xmlSource').value,q=$('xmlFind').value,sensitive=$('xmlCase').checked,isRegex=$('xmlRegex').checked;xmlMatches=[];if(q){try{const pattern=isRegex?q:q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),re=new RegExp(pattern,'g'+(sensitive?'':'i'));for(const m of text.matchAll(re))xmlMatches.push({start:m.index,length:m[0].length})}catch{$('xmlFindStatus').textContent='Regex không hợp lệ';return}}$('xmlFindStatus').textContent=xmlMatches.length?`Tìm thấy ${xmlMatches.length} kết quả${xmlIndex>=0?` · ${xmlIndex%xmlMatches.length+1}/${xmlMatches.length}`:''}`:'0 kết quả'}
-  function selectXMLMatch(step){refreshXMLMatches();if(!xmlMatches.length){xmlIndex=-1;return}xmlIndex=xmlIndex<0?(step<0?xmlMatches.length-1:0):(xmlIndex+step+xmlMatches.length)%xmlMatches.length;const {start,length}=xmlMatches[xmlIndex];$('xmlSource').focus();$('xmlSource').setSelectionRange(start,start+length);$('xmlFindStatus').textContent=`Tìm thấy ${xmlMatches.length} kết quả · ${xmlIndex+1}/${xmlMatches.length}`}
-  function replaceXMLCurrent(){refreshXMLMatches();if(!xmlMatches.length)return;if(xmlIndex<0)xmlIndex=0;const text=$('xmlSource').value,{start,length}=xmlMatches[xmlIndex],q=$('xmlFind').value,hit=text.slice(start,start+length),replacement=replaceText(hit,q,$('xmlReplace').value,false,$('xmlCase').checked,$('xmlRegex').checked);$('xmlSource').value=text.slice(0,start)+replacement+text.slice(start+length);refreshXMLMatches();selectXMLMatch(0)}
-  function replaceXMLAll(){const text=$('xmlSource').value,q=$('xmlFind').value;if(!q)return;$('xmlSource').value=replaceText(text,q,$('xmlReplace').value,true,$('xmlCase').checked,$('xmlRegex').checked);xmlIndex=-1;refreshXMLMatches()}
-  function showError(msg){const e=$('error');e.textContent=msg;e.style.display='block'}function hideError(){$('error').style.display='none'}
-  async function load(file){if(!file)return;hideError();if(file.size>20*1024*1024){showError('Tệp vượt quá giới hạn 20 MB.');return}try{const buffer=await file.arrayBuffer(),bytes=new Uint8Array(buffer);binaryMode=bytes.length>=8&&new TextDecoder().decode(bytes.subarray(0,8))==='bplist00';root=binaryMode?parseBinary(buffer):parse(new TextDecoder('utf-8').decode(bytes));filename=file.name.endsWith('.plist')?file.name:file.name.replace(/\.[^.]+$/,'')+'.plist';$('fileName').textContent=filename;$('fileMeta').textContent=(file.size/1024).toFixed(1)+' KB · '+(binaryMode?'Binary plist':'XML plist');render()}catch(e){showError(e.message||'Không thể mở tệp này.')}}
-  function downloadBlob(content,type,name){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)}
-  $('openButton').onclick=$('browseButton').onclick=()=>fileInput.click();fileInput.onchange=()=>{load(fileInput.files[0]);fileInput.value=''};$('saveButton').onclick=()=>{if(!root)return;downloadBlob(binaryMode?serializeBinary():serialize(),binaryMode?'application/octet-stream':'application/xml;charset=utf-8',filename)};$('saveXMLButton').onclick=()=>{if(!root)return;downloadBlob(serialize(),'application/xml;charset=utf-8',filename.replace(/\.plist$/i,'')+'.xml.plist')};
-  $('findNext').onclick=()=>moveSearch(1);$('findPrev').onclick=()=>moveSearch(-1);$('replaceOne').onclick=replaceCurrent;$('replaceAll').onclick=replaceEverywhere;$('findInput').addEventListener('input',()=>{searchIndex=-1;render()});$('caseSensitive').onchange=()=>{searchIndex=-1;render()};$('regexMode').onchange=()=>{searchIndex=-1;render()};$('findInput').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();moveSearch(e.shiftKey?-1:1)}});$('replaceInput').addEventListener('keydown',e=>{if(e.key==='Enter')replaceCurrent()});
-  $('xmlViewButton').onclick=openXMLView;$('cancelXML').onclick=openXMLView;$('applyXML').onclick=()=>{hideError();try{root=parse($('xmlSource').value);render()}catch(e){showError(e.message||'XML không hợp lệ.')}};
-  $('xmlFind').addEventListener('input',()=>{xmlIndex=-1;refreshXMLMatches()});$('xmlCase').onchange=()=>{xmlIndex=-1;refreshXMLMatches()};$('xmlRegex').onchange=()=>{xmlIndex=-1;refreshXMLMatches()};$('xmlSource').addEventListener('input',()=>{xmlIndex=-1;refreshXMLMatches()});$('xmlNext').onclick=()=>selectXMLMatch(1);$('xmlPrev').onclick=()=>selectXMLMatch(-1);$('xmlReplaceOne').onclick=replaceXMLCurrent;$('xmlReplaceAll').onclick=replaceXMLAll;$('xmlFind').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();selectXMLMatch(e.shiftKey?-1:1)}});$('xmlReplace').addEventListener('keydown',e=>{if(e.key==='Enter')replaceXMLCurrent()});
-  const dz=$('dropzone');['dragenter','dragover'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add('drag')}));['dragleave','drop'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove('drag')}));dz.addEventListener('drop',e=>load(e.dataTransfer.files[0]));
+  
+  function counts(n,c={total:0,dict:0,array:0}){
+    c.total++;
+    if(n.type==='dict'){ c.dict++; n.entries.forEach(x=>counts(x.value,c)); }
+    if(n.type==='array'){ c.array++; n.items.forEach(x=>counts(x,c)); }
+    return c;
+  }
+
+  function defaultNode(t='string'){
+    return t==='dict'?{type:t,entries:[]}:t==='array'?{type:t,items:[]}:t==='boolean'?{type:t,value:false}:{type:t,value:''};
+  }
+
+  function collectMatches(){
+    const q=$('findInput').value; if(!q) return [];
+    const sensitive=$('caseSensitive').checked, isRegex=$('regexMode').checked;
+    let re;
+    try{ re=new RegExp(isRegex?q:q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'), sensitive?'':'i'); }
+    catch(e){ $('findStatus').textContent='Regex không hợp lệ'; return []; }
+
+    const matches=[];
+    function has(s){ re.lastIndex=0; return re.test(String(s??'')); }
+    function walk(n){
+      if(n.type==='dict'){
+        for(const e of n.entries){
+          if(has(e.key)) matches.push({target:e, field:'key'});
+          walk(e.value);
+        }
+      }else if(n.type==='array'){
+        n.items.forEach(walk);
+      }else if(n.type!=='boolean' && has(n.value)){
+        matches.push({target:n, field:'value'});
+      }
+    }
+    if(root) walk(root);
+    return matches;
+  }
+
+  function render(){
+    sourceOpen=false;
+    searchMatches=collectMatches();
+    const tree=$('tree'); tree.innerHTML='';
+    tree.append(renderNode(root,'root',null));
+    
+    const c=counts(root);
+    $('stats').innerHTML=`Loại gốc <strong>${label(root.type)}</strong><br>Số giá trị <strong>${c.total}</strong><br>Dictionary <strong>${c.dict}</strong><br>Array <strong>${c.array}</strong>`;
+    
+    $('editor').style.display='block';
+    $('upload').style.display='none';
+    $('saveButton').disabled=false;
+    $('saveXMLButton').disabled=false;
+    $('xmlViewButton').style.display='inline-flex';
+    $('sourceView').style.display='none';
+    document.querySelector('.findbar').style.display='flex';
+    document.querySelector('.editor-layout').style.display='grid';
+    $('xmlViewButton').innerHTML='&lt;/&gt; <span>XML</span>';
+    
+    updateSearchStatus();
+    if(searchIndex>=0 && searchMatches.length){
+      const row=tree.querySelector(`[data-match="${searchIndex%searchMatches.length}"]`);
+      row?.scrollIntoView({block:'nearest'});
+    }
+  }
+
+  function openXMLView(){
+    if(sourceOpen){
+      sourceOpen=false;
+      $('sourceView').style.display='none';
+      document.querySelector('.findbar').style.display='flex';
+      document.querySelector('.editor-layout').style.display='grid';
+      $('xmlViewButton').innerHTML='&lt;/&gt; <span>XML</span>';
+      return;
+    }
+    sourceOpen=true;
+    $('xmlSource').value=serialize();
+    $('sourceView').style.display='block';
+    document.querySelector('.findbar').style.display='none';
+    document.querySelector('.editor-layout').style.display='none';
+    $('xmlViewButton').innerHTML='<span>Cây</span>';
+  }
+
+  function renderNode(n, path, parent){
+    const wrap=document.createElement('div'); wrap.className='node';
+    const row=document.createElement('div'); row.className='node-row';
+    const hasChildren=n.type==='dict'||n.type==='array';
+    
+    const twist=document.createElement('button'); twist.className='twisty';
+    twist.textContent=hasChildren?'⌄':'';
+    row.append(twist);
+
+    const content=document.createElement('div'); content.className='node-content';
+    if(parent?.type==='dict'){
+      const key=document.createElement('input'); key.className='key-input';
+      key.value=parent.entries[path].key;
+      key.setAttribute('aria-label','Tên khóa');
+      key.oninput=()=>{ parent.entries[path].key=key.value; };
+      content.append(key);
+    }
+
+    const badge=document.createElement('span'); badge.className='kind';
+    badge.textContent=label(n.type);
+    content.append(badge);
+
+    if(n.type==='boolean'){
+      const select=document.createElement('select'); select.className='value-input';
+      select.innerHTML='<option value="false">false</option><option value="true">true</option>';
+      select.value=String(n.value);
+      select.onchange=()=>{ n.value=select.value==='true'; };
+      content.append(select);
+    }else if(hasChildren){
+      const val=document.createElement('span'); val.className='value';
+      val.textContent=n.type==='dict'?`${n.entries.length} mục`:`${n.items.length} mục`;
+      content.append(val);
+    }else{
+      const inp=document.createElement('input'); inp.className='value-input';
+      inp.value=n.value??'';
+      inp.setAttribute('aria-label','Giá trị');
+      inp.oninput=()=>{ n.value=inp.value; };
+      content.append(inp);
+    }
+
+    const tools=document.createElement('div'); tools.className='node-tools';
+    const type=document.createElement('select'); type.className='type-select';
+    types.forEach(t=>{
+      const o=document.createElement('option'); o.value=t; o.textContent=label(t);
+      type.append(o);
+    });
+    type.value=n.type;
+    type.title='Đổi kiểu dữ liệu';
+    type.onchange=()=>{
+      const next=defaultNode(type.value);
+      if(n.type==='dict' && next.type==='dict') next.entries=n.entries;
+      if(n.type==='array' && next.type==='array') next.items=n.items;
+      Object.keys(n).forEach(k=>delete n[k]);
+      Object.assign(n,next);
+      render();
+    };
+    tools.append(type);
+
+    if(parent){
+      const del=document.createElement('button'); del.className='icon-btn del';
+      del.textContent='×'; del.title='Xóa mục';
+      del.onclick=()=>{
+        if(parent.type==='dict') parent.entries.splice(path,1);
+        else parent.items.splice(path,1);
+        render();
+      };
+      tools.append(del);
+    }
+    row.append(content, tools);
+
+    const entry=parent?.type==='dict'?parent.entries[path]:null;
+    const hit=searchMatches.findIndex(m=>(entry&&m.target===entry&&m.field==='key')||(m.target===n&&m.field==='value'));
+    if(hit>=0){
+      row.dataset.match=hit;
+      if(hit===searchIndex) row.classList.add('find-hit');
+    }
+    wrap.append(row);
+
+    if(hasChildren){
+      const children=document.createElement('div'); children.className='children';
+      if(n.type==='dict'){
+        n.entries.forEach((x,i)=>children.append(renderNode(x.value,i,n)));
+        makeAdd(children,n,'dict');
+      }else{
+        n.items.forEach((x,i)=>children.append(renderNode(x,i,n)));
+        makeAdd(children,n,'array');
+      }
+      wrap.append(children);
+      twist.onclick=()=>{
+        const collapsed=children.style.display==='none';
+        children.style.display=collapsed?'':'none';
+        twist.textContent=collapsed?'⌄':'›';
+      };
+    }
+    return wrap;
+  }
+
+  function makeAdd(container, n, type){
+    const bar=document.createElement('div'); bar.className='add-row';
+    const btn=document.createElement('button'); btn.className='add-btn';
+    btn.textContent='+ Thêm '+(type==='dict'?'khóa':'mục');
+    btn.onclick=()=>{
+      const node=defaultNode();
+      if(type==='dict') n.entries.push({key:'NewKey', value:node});
+      else n.items.push(node);
+      render();
+    };
+    bar.append(btn);
+    container.append(bar);
+  }
+
+  function updateSearchStatus(){
+    const s=$('findStatus'); if(!s) return;
+    if($('regexMode').checked){
+      try{ new RegExp($('findInput').value, $('caseSensitive').checked?'':'i'); }
+      catch{ s.textContent='Regex không hợp lệ'; return; }
+    }
+    s.textContent=searchMatches.length?`Tìm thấy ${searchMatches.length} kết quả${searchIndex>=0?` · ${searchIndex%searchMatches.length+1}/${searchMatches.length}`:''}`:'0 kết quả';
+  }
+
+  function moveSearch(step){
+    searchMatches=collectMatches();
+    if(!searchMatches.length){ searchIndex=-1; render(); return; }
+    searchIndex = searchIndex<0 ? (step<0?searchMatches.length-1:0) : (searchIndex+step+searchMatches.length)%searchMatches.length;
+    render();
+  }
+
+  function replaceText(text, query, replacement, all, sensitive, isRegex=false){
+    if(!query) return text;
+    try{
+      const pattern=isRegex?query:query.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+      const re=new RegExp(pattern, (all?'g':'')+(sensitive?'':'i'));
+      return text.replace(re, replacement);
+    }catch{ return text; }
+  }
+
+  function replaceCurrent(){
+    searchMatches=collectMatches();
+    if(!searchMatches.length) return;
+    const i=searchIndex<0?0:searchIndex%searchMatches.length;
+    const m=searchMatches[i], q=$('findInput').value, r=$('replaceInput').value;
+    m.target[m.field]=replaceText(String(m.target[m.field]??''), q, r, false, $('caseSensitive').checked, $('regexMode').checked);
+    searchIndex=i;
+    render();
+    showToast();
+  }
+
+  function replaceEverywhere(){
+    const matches=collectMatches(), q=$('findInput').value;
+    if(!matches.length || !q){ searchIndex=-1; updateSearchStatus(); return; }
+    const r=$('replaceInput').value, sensitive=$('caseSensitive').checked, isRegex=$('regexMode').checked;
+    matches.forEach(m=>m.target[m.field]=replaceText(String(m.target[m.field]??''), q, r, true, sensitive, isRegex));
+    searchIndex=-1;
+    render();
+    showToast();
+  }
+
+  function refreshXMLMatches(){
+    const text=$('xmlSource').value, q=$('xmlFind').value, sensitive=$('xmlCase').checked, isRegex=$('xmlRegex').checked;
+    xmlMatches=[];
+    if(q){
+      try{
+        const pattern=isRegex?q:q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+        const re=new RegExp(pattern, 'g'+(sensitive?'':'i'));
+        for(const m of text.matchAll(re)) xmlMatches.push({start:m.index, length:m[0].length});
+      }catch{ $('xmlFindStatus').textContent='Regex không hợp lệ'; return; }
+    }
+    $('xmlFindStatus').textContent=xmlMatches.length?`Tìm thấy ${xmlMatches.length} kết quả${xmlIndex>=0?` · ${xmlIndex%xmlMatches.length+1}/${xmlMatches.length}`:''}`:'0 kết quả';
+  }
+
+  function selectXMLMatch(step){
+    refreshXMLMatches();
+    if(!xmlMatches.length){ xmlIndex=-1; return; }
+    xmlIndex=xmlIndex<0 ? (step<0?xmlMatches.length-1:0) : (xmlIndex+step+xmlMatches.length)%xmlMatches.length;
+    const {start,length}=xmlMatches[xmlIndex];
+    $('xmlSource').focus();
+    $('xmlSource').setSelectionRange(start, start+length);
+    $('xmlFindStatus').textContent=`Tìm thấy ${xmlMatches.length} kết quả · ${xmlIndex+1}/${xmlMatches.length}`;
+  }
+
+  function replaceXMLCurrent(){
+    refreshXMLMatches();
+    if(!xmlMatches.length) return;
+    if(xmlIndex<0) xmlIndex=0;
+    const text=$('xmlSource').value, {start,length}=xmlMatches[xmlIndex], q=$('xmlFind').value;
+    const hit=text.slice(start, start+length);
+    const replacement=replaceText(hit, q, $('xmlReplace').value, false, $('xmlCase').checked, $('xmlRegex').checked);
+    $('xmlSource').value=text.slice(0,start)+replacement+text.slice(start+length);
+    refreshXMLMatches();
+    selectXMLMatch(0);
+    showToast();
+  }
+
+  function replaceXMLAll(){
+    const text=$('xmlSource').value, q=$('xmlFind').value;
+    if(!q) return;
+    $('xmlSource').value=replaceText(text, q, $('xmlReplace').value, true, $('xmlCase').checked, $('xmlRegex').checked);
+    xmlIndex=-1;
+    refreshXMLMatches();
+    showToast();
+  }
+
+  function showError(msg){ const e=$('error'); e.textContent=msg; e.style.display='block'; }
+  function hideError(){ $('error').style.display='none'; }
+
+  async function load(file){
+    if(!file) return;
+    hideError();
+    if(file.size>20*1024*1024){ showError('Tệp vượt quá giới hạn 20 MB.'); return; }
+    try{
+      const buffer=await file.arrayBuffer(), bytes=new Uint8Array(buffer);
+      binaryMode = bytes.length>=8 && new TextDecoder().decode(bytes.subarray(0,8))==='bplist00';
+      root = binaryMode ? parseBinary(buffer) : parse(new TextDecoder('utf-8').decode(bytes));
+      filename = file.name.endsWith('.plist') ? file.name : file.name.replace(/\.[^.]+$/,'') + '.plist';
+      $('fileName').textContent=filename;
+      $('fileMeta').textContent=(file.size/1024).toFixed(1)+' KB · '+(binaryMode?'Binary plist':'XML plist');
+      render();
+      showToast("Đã tải tệp thành công!");
+    }catch(e){
+      showError(e.message||'Không thể mở tệp này.');
+    }
+  }
+
+  function downloadBlob(content, type, name){
+    const url=URL.createObjectURL(new Blob([content],{type})), a=document.createElement('a');
+    a.href=url; a.download=name; a.click();
+    setTimeout(()=>URL.revokeObjectURL(url), 1500);
+  }
+
+  $('openButton').onclick=$('browseButton').onclick=()=>fileInput.click();
+  fileInput.onchange=()=>{ load(fileInput.files[0]); fileInput.value=''; };
+  
+  $('saveButton').onclick=()=>{
+    if(!root) return;
+    downloadBlob(binaryMode?serializeBinary():serialize(), binaryMode?'application/octet-stream':'application/xml;charset=utf-8', filename);
+  };
+  
+  $('saveXMLButton').onclick=()=>{
+    if(!root) return;
+    downloadBlob(serialize(), 'application/xml;charset=utf-8', filename.replace(/\.plist$/i,'')+'.xml.plist');
+  };
+
+  $('findNext').onclick=()=>moveSearch(1);
+  $('findPrev').onclick=()=>moveSearch(-1);
+  $('replaceOne').onclick=replaceCurrent;
+  $('replaceAll').onclick=replaceEverywhere;
+  $('findInput').addEventListener('input',()=>{ searchIndex=-1; render(); });
+  $('caseSensitive').onchange=()=>{ searchIndex=-1; render(); };
+  $('regexMode').onchange=()=>{ searchIndex=-1; render(); };
+  $('findInput').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); moveSearch(e.shiftKey?-1:1); } });
+  $('replaceInput').addEventListener('keydown',e=>{ if(e.key==='Enter') replaceCurrent(); });
+
+  $('xmlViewButton').onclick=openXMLView;
+  $('cancelXML').onclick=openXMLView;
+  $('applyXML').onclick=()=>{
+    hideError();
+    try{
+      root=parse($('xmlSource').value);
+      render();
+      showToast("Đã áp dụng thay đổi XML!");
+    }catch(e){ showError(e.message||'XML không hợp lệ.'); }
+  };
+
+  $('xmlFind').addEventListener('input',()=>{ xmlIndex=-1; refreshXMLMatches(); });
+  $('xmlCase').onchange=()=>{ xmlIndex=-1; refreshXMLMatches(); };
+  $('xmlRegex').onchange=()=>{ xmlIndex=-1; refreshXMLMatches(); };
+  $('xmlSource').addEventListener('input',()=>{ xmlIndex=-1; refreshXMLMatches(); });
+  $('xmlNext').onclick=()=>selectXMLMatch(1);
+  $('xmlPrev').onclick=()=>selectXMLMatch(-1);
+  $('xmlReplaceOne').onclick=replaceXMLCurrent;
+  $('xmlReplaceAll').onclick=replaceXMLAll;
+  $('xmlFind').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); selectXMLMatch(e.shiftKey?-1:1); } });
+  $('xmlReplace').addEventListener('keydown',e=>{ if(e.key==='Enter') replaceXMLCurrent(); });
+
+  const dz=$('dropzone');
+  ['dragenter','dragover'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.add('drag')}));
+  ['dragleave','drop'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.classList.remove('drag')}));
+  dz.addEventListener('drop',e=>load(e.dataTransfer.files[0]));
 })();
 </script>
 </body>
